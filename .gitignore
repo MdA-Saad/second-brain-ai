@@ -1,0 +1,17 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+
+# Environment and Secrets (Critical)
+.env
+.python-version
+
+# Local Data and Database (Do NOT push these)
+data/
+chroma_db/
+
+# uv specific
+.uv/
+

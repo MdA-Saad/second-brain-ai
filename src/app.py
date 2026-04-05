@@ -1,7 +1,9 @@
 import gradio as gr
 import os
-from src.loaders.factory import get_loader
+from src.loaders.implementations import get_loader
 from src.engine import SecondBrainEngine
+from dotenv import load_dotenv
+load_dotenv() # this looks for the .env file and loads the hugging face TOKEN
 
 engine=SecondBrainEngine()
 
@@ -25,7 +27,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
     output_text = gr.Textbox(label="Response")
     submit_btn = gr.Button("Query System")
 
-    submit_btn.click(fn=process_and_chat, inputs=[file_input, question_input], outuputs=output_text)
+    submit_btn.click(fn=process_and_chat, inputs=[file_input, question_input], outputs=output_text)
 
 if __name__=="__main__":
     demo.launch(server_name="0.0.0.0")
