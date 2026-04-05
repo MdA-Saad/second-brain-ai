@@ -12,9 +12,10 @@ class SecondBrainEngine:
     def ingest(self,documents):
         chunks = self.splitter.split_documents(documents)
         self.vector_store.add_documents(chunks)
-        self.vector_store.persist()
+        if hasattr(self.vector_store, 'persist'):
+            self.vector_store.persist()
 
-    def answer(self, question: str):
+    def query(self, question: str):
         # Simple similarity search to start with
         results = self.vector_store.similarity_search(question, k=3)
         if not results:
@@ -22,5 +23,5 @@ class SecondBrainEngine:
 
         # Combine the top results into a readable string
         context = "\n\n".join([doc.page_content for doc in results])
-        return f"Based on my knowledge:\n\n{context}"
+        return f"### Based on my knowledge:\n\n{context}"
 
