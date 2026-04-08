@@ -3,8 +3,11 @@ import os
 from datetime import datetime
 
 class RAGLogger:
-    def __init__(self, filename="eval/logs/rag_eval.json"):
-        self.filename = filename
+    def __init__(self, version="v1.0", base_path="eval/logs"):
+        self.version = version
+        date_str = datetime.now().strftime("%Y-%m-%d")
+        safe_version = version.replace(" ", "_").replace(".","_")
+        self.filename = f"{base_path}/{safe_version}_{date_str}.json
         os.makedirs(os.path.dirname(self.filename), exist_ok=True)
         # Initialize the file if doesn't exist
         if not os.path.exists(self.filename) or os.stat(self.filename).st_size==0:
@@ -37,7 +40,6 @@ class RAGLogger:
                 "response": response,
                 "retrieved_context": retrieved_context,
                 "evaluation": scores,
-
                 # Calculate a quick mean score for the "Big Brain" summary
                 "mean_score": sum(v for k, v in scores.items() if isinstance(v, (int, float))) / 3
             }
