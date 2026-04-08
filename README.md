@@ -19,8 +19,8 @@
 
 ## Technical Architecture
 ### **Version 1.0**
--- I starded with a basic `vector_search->context->LLM` pipeline.
--- Issue: The model is finding the text based on similarity search without understanding the global context or intent.
+- I starded with a basic `vector_search->context->LLM` pipeline.
+- Issue: The model is finding the text based on similarity search without understanding the global context or intent.
 
 ## Versions log
 - **Version 1.0:** I have built a basic similarity search based RAG model.
