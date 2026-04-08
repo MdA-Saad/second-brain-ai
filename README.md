@@ -16,3 +16,6 @@
 1. Clone the repo.
 2. Create a `.env` file with your `HF_TOKEN`.
 3. Run `uv run python -m src.app`.
+
+## Versions
+- **Version 1.0:** I have built a basic similarity search based RAG model.
