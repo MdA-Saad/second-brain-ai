@@ -27,5 +27,5 @@ ENV GRADIO_SERVER_NAME="0.0.0.0"
 EXPOSE 7860
 
 # Run the Gradio app
-CMD ["uv", "run", "src/app.py"]
+CMD ["uv", "run", "python", "-m", "src.app"]
 
