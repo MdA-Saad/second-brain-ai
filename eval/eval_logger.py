@@ -7,7 +7,7 @@ class RAGLogger:
         self.version = version
         date_str = datetime.now().strftime("%Y-%m-%d")
         safe_version = version.replace(" ", "_").replace(".","_")
-        self.filename = f"{base_path}/{safe_version}_{date_str}.json
+        self.filename = f"{base_path}/{safe_version}_{date_str}.json"
         os.makedirs(os.path.dirname(self.filename), exist_ok=True)
         # Initialize the file if doesn't exist
         if not os.path.exists(self.filename) or os.stat(self.filename).st_size==0:
