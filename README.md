@@ -1,3 +1,15 @@
+---
+title: Second Brain AI
+emoji: 🧠
+colorForm: blue
+ColorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+license: mit
+---
+
+
 # Second Brain AI
 > **Transform your personal documents into an intelligent, agentic knowledge base.**
 
