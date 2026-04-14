@@ -16,11 +16,11 @@ RUN uv sync --frozen
 # Copy the rest of the application
 COPY . .
 
-# Expose Gradio's default port
-EXPOSE 7860
-
 # Ensure the app is reachable outside the container
 ENV GRADIO_SERVER_NAME="0.0.0.0"
+
+# Expose Gradio's default port
+EXPOSE 7860
 
 # Run the Gradio app
 CMD ["uv", "run", "src/app.py"]
