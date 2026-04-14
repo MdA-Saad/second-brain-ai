@@ -4,12 +4,11 @@ from src.engine import SecondBrainEngine
 from eval.eval_logger import  RAGLogger
 from dotenv import load_dotenv
 
-logger = RAGLogger()
 load_dotenv() # this looks for the .env file and loads the hugging face TOKEN
-
 engine=SecondBrainEngine()
 
 VERSION = "v1.0_Stage1_Pure_Retrieval"
+logger = RAGLogger(version=VERSION)
 
 def process_and_chat(file_obj, question,model_choice, history):
     if not file_obj:
