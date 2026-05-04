@@ -29,3 +29,5 @@ EXPOSE 7860
 # Run the Gradio app
 CMD ["uv", "run", "python", "-m", "src.app"]
 
+# fake Openai Api key to avoid error's
+ENV OPENAI_API_KEY="sk-local-ollama-setup"

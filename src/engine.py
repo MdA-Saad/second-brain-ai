@@ -19,9 +19,10 @@ class SecondBrainEngine:
         # Simple similarity search to start with
         results = self.vector_store.similarity_search(question, k=3)
         if not results:
-            return "Sorry, I dont have information about this question."
+            return {"answer": "No info found.", "contexts":[]}
 
         # Combine the top results into a readable string
-        context = "\n\n".join([doc.page_content for doc in results])
-        return f"### Based on my knowledge:\n\n{context}"
+        contexts=[doc.page_content for doc in results]
+        answer=f"### Based on my knowledge:\n\n"+"\n\n".join(contexts)
+        return {"answer": answer, "contexts": contexts}
 

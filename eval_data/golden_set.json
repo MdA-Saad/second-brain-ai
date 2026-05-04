@@ -1,0 +1,20 @@
+[
+    {
+        "input": "Imagine a scenario where the next edition of the Global Risks Report is delayed due to unforeseen circumstances. How would the collaboration between partners like Marsh and Zurich Insurance Group be affected, given their previous contributions?",
+        "actual_output": null,
+        "expected_output": "Given the partnership history with Marsh and Zurich Insurance Group, it's likely that any delay in the next edition of the Global Risks Report would impact their collaborative efforts. Their generous inputs and guidance have been invaluable to the report's production. A delay might affect their ability to provide timely contributions, potentially disrupting the report's publication timeline.",
+        "context": [
+            "Acknowledgement\nThe Global Risks Report is produced exclusively by the World Economic Forum. \nWe are grateful to our longstanding partners on previous editions, Marsh and \nZurich Insurance Group. Their generous inputs and in-depth guidance have \nbeen invaluable.\nTerms of use and disclaimer\nThis document is published by the World Economic Forum as a contribution \nto a project, insight area or interaction. The findings, interpretations and \nconclusions expressed herein are a result of a collaborative process facilitated \nand endorsed by the World Economic Forum but whose results do not \nnecessarily represent the views of the World Economic Forum, nor the entirety \nof its Members, Partners or other stakeholders.\nWorld Economic Forum\n91-93 route de la Capite \nCH-1223 Cologny/Geneva \nSwitzerland \nTel.: +41 (0)22 869 1212 \nFax: +41 (0)22 786 2744 \nE-mail: contact@weforum.org \nwww.weforum.org\nCopyright © 2026 \nby the World Economic Forum\nAll rights reserved. No part of this publication may \nbe reproduced, stored in a retrieval system, or \ntransmitted, in any form or by any means, electronic, \nmechanical, photocopying, or otherwise without the \nprior permission of the World Economic Forum."
+        ],
+        "source_file": null
+    },
+    {
+        "input": "What is the title of the Global Risks Report published in 2026, as stated in its contents?",
+        "actual_output": null,
+        "expected_output": "The title of the Global Risks Report published in 2026 is \"Global Risks Report 2026\". (Located on page 2)",
+        "context": [
+            "Contents\nPreface\nOverview of methodology\nKey findings\nChapter 1: Global Risks 2026-2036: The Age of Competition\n1.1 The world in 2026: on a precipice\n1.2 The path to 2028: compounding risks\n1.3 The path to 2036: over the edge?\n1.4 A darkening outlook\nChapter 2: Global Risks In-Depth: Anticipating Tomorrow’s Challenges Today\n2.1 An underlying context of structural change\n2.2 Multipolarity without multilateralism\n2.3 Values at war\n2.4 An economic reckoning\n2.5 Infrastructure endangered\n2.6 Quantum leaps\n2.7 AI at large\nEndnotes\nAppendix A: Definitions and Global Risks List\nAppendix B: Global Risks Perception Survey 2025-2026\nAppendix C: Executive Opinion Survey: National Risk Perceptions\nAppendix D: Risk Governance\nPartner Institutes\nAcknowledgements\n4\n5\n6\n14\n14\n15\n18\n21\n23\n23\n24\n32\n40\n46\n53\n60\n68\n75\n78\n81\n91\n94\n100\nGlobal Risks Report 2026\n2"
+        ],
+        "source_file": null
+    }
+]

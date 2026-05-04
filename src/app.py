@@ -1,7 +1,7 @@
 import gradio as gr
 from src.loaders.implementations import get_loader
 from src.engine import SecondBrainEngine
-from eval.eval_logger import  RAGLogger
+from evaluation.eval_logger import  RAGLogger
 from dotenv import load_dotenv
 
 load_dotenv() # this looks for the .env file and loads the hugging face TOKEN

@@ -16,9 +16,14 @@ uv sync
 
 if [! -f .env]; then
     echo "Creating .env file..."
-    echo "HF_TOKEN=your_token_here" > .env
+    cp .env.example .env
     echo "Created .env. Please update it with your actual token."
 fi
+set -a #automatically export all variables
+source .env # read the .env files
+set +a
 
 echo "Setup complete! Use 'source .venv/bin/activate' to start."
 echo "Pro-tip: Type 'uv run python - m src.app' to launch the UI."
+
+
